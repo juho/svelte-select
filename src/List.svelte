@@ -12,7 +12,7 @@
   export let isVirtualList = false;
   export let items = [];
   export let getOptionLabel = (option, filterText) => {
-    if (option) return option.isCreator ? `Create \"${filterText}\"` : option.label;
+    if (option) return option.isCreator ? `${TAPi8n.__('requisitions.interview.create')} \"${filterText}\"` : option.label;
   };
   export let getGroupHeaderLabel = (option) => { return option.label };
   export let itemHeight = 40;
